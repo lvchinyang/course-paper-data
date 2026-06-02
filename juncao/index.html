@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>菌草技术25国数据资料下载</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, "Microsoft YaHei", sans-serif;
+      background: #f6f8fa;
+      margin: 0;
+      padding: 40px 20px;
+      color: #24292f;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 36px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(140, 149, 159, 0.2);
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #1f6f43;
+    }
+
+    .subtitle {
+      color: #57606a;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    .file-list {
+      display: grid;
+      gap: 16px;
+    }
+
+    .file-card {
+      border: 1px solid #d0d7de;
+      border-radius: 12px;
+      padding: 18px 20px;
+      background: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .file-info {
+      flex: 1;
+    }
+
+    .file-title {
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .file-desc {
+      font-size: 14px;
+      color: #57606a;
+      line-height: 1.6;
+    }
+
+    .download-btn {
+      text-decoration: none;
+      background: #2da44e;
+      color: #ffffff;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    .download-btn:hover {
+      background: #218739;
+    }
+
+    .note {
+      margin-top: 28px;
+      font-size: 14px;
+      color: #6e7781;
+      line-height: 1.7;
+      border-top: 1px solid #d8dee4;
+      padding-top: 18px;
+    }
+
+    @media (max-width: 600px) {
+      .file-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .download-btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>小而美项目落实GDI的机制分析</h1>
+
+    <p class="subtitle">
+      本页面用于公开课程论文相关的数据文件、资料来源、编码手册和分析脚本。
+      点击下方按钮即可下载对应文件。
+    </p>
+
+    <div class="file-list">
+
+      <div class="file-card">
+        <div class="file-info">
+          <div class="file-title">描述统计与交叉表</div>
+          <div class="file-desc">Excel 文件，包含菌草技术25国样本的描述统计与交叉表结果。</div>
+        </div>
+        <a class="download-btn" href="descriptive_cross_tables.xlsx" download>下载</a>
+      </div>
+
+      <div class="file-card">
+        <div class="file-info">
+          <div class="file-title">菌草技术25国数据库</div>
+          <div class="file-desc">Excel 文件，包含研究使用的主要数据表。</div>
+        </div>
+        <a class="download-btn" href="juncao_25_countries_database.xlsx" download>下载</a>
+      </div>
+
+      <div class="file-card">
+        <div class="file-info">
+          <div class="file-title">资料来源说明</div>
+          <div class="file-desc">Word 文件，说明数据资料来源及整理依据。</div>
+        </div>
+        <a class="download-btn" href="data_sources.docx" download>下载</a>
+      </div>
+
+      <div class="file-card">
+        <div class="file-info">
+          <div class="file-title">国家案例编码手册</div>
+          <div class="file-desc">Word 文件，说明国家案例的编码规则和变量含义。</div>
+        </div>
+        <a class="download-btn" href="coding_manual.docx" download>下载</a>
+      </div>
+
+      <div class="file-card">
+        <div class="file-info">
+          <div class="file-title">数据处理脚本</div>
+          <div class="file-desc">Python 文件，用于生成相关统计表或辅助数据处理。</div>
+        </div>
+        <a class="download-btn" href="juncao_tables.py" download>下载</a>
+      </div>
+
+    </div>
+
+    <div class="note">
+      提示：如果浏览器直接打开文件而没有自动下载，可以右键点击下载按钮，选择“链接另存为”或“Save link as...”。
+    </div>
+  </div>
+</body>
+</html>
